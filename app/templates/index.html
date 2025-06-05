@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PriceMyRide - Used Car Price Estimator</title>
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .caption {
+    font-size: 1.4rem;
+    color: #3d6292;          /* Matching your header blue */
+    margin-top: 6px;
+    margin-bottom: 20px;
+
+    font-weight: 700;        /* Bold */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+
+        body {
+            background: #f5f8fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        header {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1a73e8;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(26, 115, 232, 0.15);
+            max-width: 480px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 6px;
+            border: 1.8px solid #ddd;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #1a73e8;
+            box-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
+        }
+
+        input[type="submit"] {
+            margin-top: 30px;
+            background: #1a73e8;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 14px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #155ab6;
+        }
+
+        .prediction-result {
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #e8f0fe;
+            color: #1a73e8;
+            font-weight: 700;
+            font-size: 1.3rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(26, 115, 232, 0.25);
+        }
+
+        @media (max-width: 520px) {
+            form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>PRICE MY RIDE</header>
+    <p class="caption">Your AI-powered used car price estimator</p>
+
+    <form action="/predict" method="post">
+
+        <label for="brand">Brand:</label>
+        <select name="brand" id="brand" required>
+            <option value="" disabled selected>Select Brand</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Chevrolet">Chevrolet</option>
+            <option value="Ford">Ford</option>
+            <option value="Honda">Honda</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Jeep">Jeep</option>
+            <option value="Kia">Kia</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Nissan">Nissan</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Volkswagen">Volkswagen</option>
+        </select>
+
+        <label for="fuel_type">Fuel Type:</label>
+        <select name="fuel_type" id="fuel_type" required>
+            <option value="" disabled selected>Select Fuel Type</option>
+            <option value="diesel">Diesel</option>
+            <option value="gasoline">Gasoline</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="electric">Electric</option>
+        </select>
+
+        <label for="transmission">Transmission:</label>
+        <select name="transmission" id="transmission" required>
+            <option value="" disabled selected>Select Transmission</option>
+            <option value="automatic">Automatic</option>
+            <option value="manual">Manual</option>
+        </select>
+
+        <label for="ext_col">Exterior Color:</label>
+        <input type="text" id="ext_col" name="ext_col" placeholder="e.g. White" required />
+
+        <label for="int_col">Interior Color:</label>
+        <input type="text" id="int_col" name="int_col" placeholder="e.g. Black" required />
+
+        <label for="clean_title">Clean Title:</label>
+        <select name="clean_title" id="clean_title" required>
+            <option value="" disabled selected>Select Clean Title Status</option>
+            <option value="clean">Clean</option>
+            <option value="rebuilt">Rebuilt</option>
+            <option value="salvage">Salvage</option>
+            <option value="unknown">Unknown</option>
+        </select>
+
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" min="1990" max="2025" placeholder="e.g. 2018" required />
+
+        <label for="milage">Mileage:</label>
+        <input type="number" id="milage" name="milage" min="0" placeholder="e.g. 35000" required />
+
+        <input type="submit" value="Estimate Price" />
+    </form>
+
+    {% if prediction_text %}
+    <div class="prediction-result">{{ prediction_text }}</div>
+    {% endif %}
+</body>
+
+</html>
