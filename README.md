@@ -8,6 +8,7 @@ An AI-powered used car price prediction system built using a deep learning model
 - [Poster](#poster)
 - [Screenshots](#screenshots)
 - [Usage](#usage)
+- [Documentation](#documentation)
 - [Technologies Used](#technologies-used)
 - [Research Paper](#research-paper)
 - [Contributing](#contributing)
@@ -37,4 +38,38 @@ An AI-powered used car price prediction system built using a deep learning model
 ## Screenshots
 <img src="assets/ui.jpeg" alt="Screenshot" width="75%">
 
-- [Usage](#usage)
+## [Usage](#usage)
+1. Clone the repository:
+   `git clone https://github.com/miansaadtahir/Price-My-Ride.git`
+2. Navigate to the project directory:
+   `cd PriceMyRide\app`
+3. Create and activate virtual environment:
+   `python -m venv venv
+   venv\Scripts\activate`
+4. Install dependencies:
+   `pip install -r requirements.txt`
+5. Run the application inside project directory terminal:
+   `python app.py`
+6. Open the local address shown in the terminal `(e.g., http://127.0.0.1:5000)` in your browser to start using the app.
+
+## Documentation
+For a detailed overview of the project, refer to the [Documentation](./documentation) in the repository.
+
+## Technologies Used
+- Python
+- Flask
+- TensorFlow & Keras
+- Scikit-learn
+- Pandas
+- NumPy 
+- Matplotlib
+
+## Research Paper
+This project is accompanied by a complete IEEE-style research paper, which includes:
+- Problem statement, literature review
+- Methodology, data preprocessing, model design and evaluation
+- Results and conclusion along with references
+
+## Contributing
+Contributions, issues, and feature requests are welcome!  
+Feel free to check out the [issues page](https://github.com/miansaadtahir/Price-My-Ride/issues) for more information.
