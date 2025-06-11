@@ -53,7 +53,7 @@ An AI-powered used car price prediction system built using a deep learning model
 6. Open the local address shown in the terminal `(e.g., http://127.0.0.1:5000)` in your browser to start using the app.
 
 ## Documentation
-For a detailed overview of the project, refer to the [Documentation](./documentation) in the repository.
+For a detailed overview of the project, refer to the [Documentation](./proposal) in the repository.
 
 ## Technologies Used
 - Python
