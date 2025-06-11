@@ -43,9 +43,9 @@ An AI-powered used car price prediction system built using a deep learning model
    `git clone https://github.com/miansaadtahir/Price-My-Ride.git`
 2. Navigate to the project directory
    `cd PriceMyRide\app`
-3. Create and activate virtual environment
-   `python -m venv venv
-   venv\Scripts\activate`
+3. Create and activate virtual environment <br>
+   `python -m venv venv` <br>
+   `venv\Scripts\activate`
 4. Install dependencies
    `pip install -r requirements.txt`
 5. Run the application inside project directory terminal
