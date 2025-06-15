@@ -33,7 +33,7 @@ An AI-powered used car price prediction system built using a deep learning model
 - **Metrics**: MAE, MSE, RMSE, R²
 
 ## Poster
-<img src="assets/poster.PNG" alt="Screenshot" width="75%">
+<img src="assets/poster.PNG" alt="Screenshot" width="50%">
 
 ## Screenshots
 <img src="assets/ui.jpeg" alt="Screenshot" width="75%">
