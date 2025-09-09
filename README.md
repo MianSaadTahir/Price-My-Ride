@@ -14,12 +14,12 @@ An AI-powered used car price prediction system built using a deep learning model
 - [Contributing](#contributing)
 
 ## Features
-- **Data Cleaning & Preprocessing**: Cleaned columns such as `milage`, `price`, and handled missing values.
-- **Label Encoding**: Converted categorical variables to numerical format for model training.
-- **Model Architecture**: Deep Neural Network (DNN) with three hidden layers using ReLU activation.
-- **Evaluation Metrics**: Included RMSE and R² metrics using Keras backend for better evaluation.
-- **Visualizations**: Tracked and plotted training loss, MAE, MSE, and RMSE over epochs.
-- **Model Saving**: Final model exported as `used_car_price_model.keras`.
+- Cleaned columns such as `milage`, `price`, and handled missing values.
+- Converted categorical variables to numerical format for model training.
+- Deep Neural Network (DNN) with three hidden layers using ReLU activation.
+- Included RMSE and R² metrics using Keras for better evaluation.
+- Tracked and plotted training loss, MAE, MSE, and RMSE over epochs.
+- Final model exported as `used_car_price_model.keras`.
 
 ## Model Architecture
 - **Input Layer**: Accepts features such as mileage, fuel type, transmission, etc.
@@ -33,7 +33,7 @@ An AI-powered used car price prediction system built using a deep learning model
 - **Metrics**: MAE, MSE, RMSE, R²
 
 ## Poster
-<img src="assets/poster.PNG" alt="Screenshot" width="50%">
+<img src="assets/poster.PNG" alt="Screenshot" width="75%">
 
 ## Screenshots
 <img src="assets/ui.jpeg" alt="Screenshot" width="75%">
@@ -42,15 +42,14 @@ An AI-powered used car price prediction system built using a deep learning model
 1. Clone the repository
    `git clone https://github.com/miansaadtahir/Price-My-Ride.git`
 2. Navigate to the project directory
-   `cd PriceMyRide\app`
+   `cd .\app`
 3. Create and activate virtual environment <br>
    `python -m venv venv` <br>
    `venv\Scripts\activate`
 4. Install dependencies
    `pip install -r requirements.txt`
-5. Run the application inside project directory terminal
-   `python app.py`
-6. Open the local address shown in the terminal `(e.g., http://127.0.0.1:5000)` in your browser to start using the app.
+5. Run `python app.py` inside project directory terminal
+6. Open the local address shown in the terminal `(e.g., http://127.0.0.1:5000)` in your browser to go live.
 
 ## Documentation
 For a detailed overview of the project, refer to the [Documentation](./proposal) in the repository.
