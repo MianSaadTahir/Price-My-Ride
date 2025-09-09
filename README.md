@@ -14,15 +14,14 @@ An AI-powered used car price prediction system built using a deep learning model
 - [Contributing](#contributing)
 
 ## Features
-- Cleaned columns such as `milage`, `price`, and handled missing values.
-- Converted categorical variables to numerical format for model training.
-- Deep Neural Network (DNN) with three hidden layers using ReLU activation.
-- Included RMSE and R² metrics using Keras for better evaluation.
-- Tracked and plotted training loss, MAE, MSE, and RMSE over epochs.
-- Final model exported as `used_car_price_model.keras`.
+- Cleaned columns such as `milage`, `price`, and handled missing values
+- Converted categorical variables to numerical format for model training
+- Deep Neural Network (DNN) with three hidden layers using ReLU activation
+- Included RMSE and R² metrics using Keras for better evaluation
+- Tracked and plotted training loss, MAE, MSE, and RMSE over epochs
 
 ## Model Architecture
-- **Input Layer**: Accepts features such as mileage, fuel type, transmission, etc.
+- **Input Layer**: Accepts features such as mileage, fuel type, transmission, etc
 - **Hidden Layers**:
   - Dense(128, ReLU)
   - Dense(64, ReLU)
@@ -61,7 +60,7 @@ For a detailed overview of the project, refer to the [Documentation](./proposal)
 4. Install dependencies
    `pip install -r requirements.txt`
 5. Run `python app.py` inside project directory terminal
-6. Open the local address shown in the terminal `(e.g., http://127.0.0.1:5000)` in your browser to go live.
+6. Open the local address shown in the terminal `(e.g., http://127.0.0.1:5000)` in your browser
 
 ## Research Paper
 This project is accompanied by a complete IEEE-style research paper, which includes:
