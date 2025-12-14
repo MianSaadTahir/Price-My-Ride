@@ -12,7 +12,7 @@ An AI-powered used car price prediction system built using a deep learning model
 - [Usage](#usage)
 - [Research Paper](#research-paper)
 - [Contributing](#contributing)
-
+- [License](#license)
 ## Features
 - Cleaned columns such as `milage`, `price`, and handled missing values
 - Converted categorical variables to numerical format for model training
@@ -70,4 +70,8 @@ This project is accompanied by a complete IEEE-style research paper, which inclu
 
 ## Contributing
 Contributions, issues, and feature requests are welcome!  
-Feel free to check out the [issues page](https://github.com/miansaadtahir/Price-My-Ride/issues) for more information.
+Feel free to check out the [issues page](https://github.com/miansaadtahir/Price-My-Ride/issues).
+
+## License
+
+This project is open source and available under the MIT [License](https://github.com/MianSaadTahir/Price-My-Ride/blob/main/LICENSE).
