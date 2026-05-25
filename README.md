@@ -45,7 +45,7 @@ An AI-powered used car price prediction system built using a deep learning model
 
 ## Documentation
 
-For a detailed overview of the project, refer to the [Documentation](./proposal) in the repository.
+For a detailed overview of the project, refer to the [Documentation](./proposal) and [Research Paper](./researchPaper) in the repository.
 
 ## Technologies Used
 
