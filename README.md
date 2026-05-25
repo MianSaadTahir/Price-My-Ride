@@ -73,11 +73,9 @@ For a detailed overview of the project, refer to the [Documentation](./proposal)
 
 ## Research Paper
 
-This project is accompanied by a complete IEEE-style [Research Paper](./researchPaper), which includes:
-
-- Problem statement, literature review
-- Methodology, data preprocessing, model design and evaluation
-- Results and conclusion along with references
+This work is published as:  
+**"Price My Ride – An AI Powered Used Car Price Estimator"**  
+*Available on:* [Academia.edu](https://www.academia.edu/167684193/Price_My_Ride_An_AI_Powered_Used_Car_Price_Estimator)
 
 ## Contributing
 
@@ -87,5 +85,3 @@ Feel free to check out the [issues page](https://github.com/miansaadtahir/Price-
 ## License
 
 This project is open source and available under the MIT [License](https://github.com/MianSaadTahir/Price-My-Ride/blob/main/LICENSE).
-
-[![Paper](https://img.shields.io/badge/Paper-Academia.edu-blue.svg)](https://www.academia.edu/167684193/Price_My_Ride_An_AI_Powered_Used_Car_Price_Estimator)
