@@ -87,3 +87,5 @@ Feel free to check out the [issues page](https://github.com/miansaadtahir/Price-
 ## License
 
 This project is open source and available under the MIT [License](https://github.com/MianSaadTahir/Price-My-Ride/blob/main/LICENSE).
+
+[![Paper](https://img.shields.io/badge/Paper-Academia.edu-blue.svg)](https://www.academia.edu/167684193/Price_My_Ride_An_AI_Powered_Used_Car_Price_Estimator)
